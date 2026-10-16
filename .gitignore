@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+dataset_v3
+dataset_v3/
+dataset_sampling_3_prefix1024/
+external_checkpoints/
+results/
+figures/
+experiments/foundation_models/outputs/
+experiments/foundation_models/vendor/
