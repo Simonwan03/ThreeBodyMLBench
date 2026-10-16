@@ -1,6 +1,7 @@
 # Direct inputs for the single Linux x86_64 / Python 3.12 / CUDA 13.0 environment.
-# Regenerate requirements.lock with the command in README.md after changing this file.
-# Panda is imported from the repository-pinned submodule and is not pip-installed.
+# Install the pinned CUDA wheels from the official PyTorch cu130 index first; see README.md.
+# Panda is imported from a separate upstream source checkout and is not pip-installed.
+# Extra TimesFM experiments: requirements-optional.txt.
 absl-py==2.4.0
 accelerate==1.13.0
 aiohappyeyeballs==2.6.1

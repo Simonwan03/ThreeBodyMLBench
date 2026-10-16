@@ -1,0 +1,3 @@
+# Optional TimesFM experiments outside the paper's Tables 8–14.
+# Install after requirement.txt only when using these paths.
+timesfm[torch]==2.0.2

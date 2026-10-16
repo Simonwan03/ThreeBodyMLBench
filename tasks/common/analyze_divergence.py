@@ -246,12 +246,6 @@ def analyze(
 
     import matplotlib.pyplot as plt
 
-    try:
-        import scienceplots  # noqa: F401
-    except ModuleNotFoundError:
-        pass
-    else:
-        plt.style.use(["science", "no-latex"])
     plt.rcParams.update(
         {
             "font.size": 8,

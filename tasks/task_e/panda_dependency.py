@@ -44,9 +44,10 @@ def load_panda_pretrained(
         from panda.patchtst.patchtst import PatchTSTForPrediction  # type: ignore
     except ImportError as exc:
         raise ImportError(
-            "Panda is not importable. Initialize the submodule with "
-            "`git submodule update --init --recursive`, or set "
-            "STELLAR_PANDA_VENDOR_ROOT to a Panda source checkout. "
+            "Panda is not importable. Clone https://github.com/abao1999/panda.git "
+            "at commit c229e7c8c49cbe294458c44160248bb17856a715 into "
+            "experiments/foundation_models/vendor/panda, or set "
+            "STELLAR_PANDA_VENDOR_ROOT to that source checkout. "
             f"Expected default path: {vendor_root}"
         ) from exc
 

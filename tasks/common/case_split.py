@@ -38,11 +38,11 @@ def default_case_split_manifest_path(
     val_ratio: float = 0.15,
     test_ratio: float = 0.15,
 ) -> Path:
-    """Return the conventional path shared by all task entry points."""
+    """Return the shared writable split path outside the input dataset."""
 
     ratio_tag = "-".join(str(int(round(ratio * 100))) for ratio in (train_ratio, val_ratio, test_ratio))
     horizon_tag = f"{float(time_horizon):g}".replace(".", "p")
-    return Path(dataset_dir) / (
+    return Path("results/splits") / (
         f"common_case_split_sampling_{int(sampling_id)}_g{int(group_size)}_"
         f"h{horizon_tag}_r{ratio_tag}_seed{int(seed)}.csv"
     )

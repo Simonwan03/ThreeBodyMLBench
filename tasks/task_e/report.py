@@ -283,14 +283,7 @@ def _plot_one_shot(path: Path, records: list[dict[str, Any]]) -> None:
 
 
 def _plot_rolling(path: Path, records: list[dict[str, Any]]) -> None:
-    try:
-        import scienceplots  # noqa: F401
-    except ModuleNotFoundError:
-        style_context: list[str] = []
-    else:
-        style_context = ["science", "no-latex"]
-
-    with plt.style.context(style_context):
+    with plt.style.context([]):
         plt.rcParams.update(
             {
                 "font.size": 8,
