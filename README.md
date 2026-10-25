@@ -107,6 +107,17 @@ The [reproduction guide](docs/reproduction.md) maps paper tables 8–14 to entry
 | `tasks/` | Data loading, models, metrics, and shared utilities |
 | `experiments/foundation_models/` | Task B Panda, Chronos-2, and XGBoost probes |
 
+## Computational Resources
+
+The experiments were primarily conducted on an **Amazon AWS EC2 `g7.2xlarge` instance**, equipped with:
+
+- **GPU:** NVIDIA RTX PRO 4500 Blackwell (32 GB VRAM)
+- **CPU:** 8 vCPUs (Intel Xeon)
+- **Memory:** 32 GiB RAM
+- **Storage:** 440 GB local NVMe SSD
+
+This instance was primarily used for training and evaluating supervised learning models and pretrained time-series foundation models. Computational requirements vary depending on the prediction task, model architecture, and experimental configuration.
+
 ## License
 
 MIT; see [LICENSE](LICENSE).
