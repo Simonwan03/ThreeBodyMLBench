@@ -2,7 +2,7 @@
 
 Code for the NeurIPS 2026 Sim2Science paper. Run all commands below from the repository root.
 
-**Dataset — a main contribution of this work:** [Download the public sampling-2 three-body dataset (CITA)](https://www.cita.utoronto.ca/~xuduo/downloads_3body/sampling_2/). The released experiments use its low-resolution data. Data and model checkpoints are not stored in Git.
+**Dataset — a main contribution of this work:** [Download the public sampling-2 three-body dataset (CITA)](https://www.cita.utoronto.ca/~xuduo/downloads_3body/sampling_2/).
 
 ## 1. Create the environment
 
